@@ -21,10 +21,10 @@ company_dir="${PWD}/${company_name}"
 if [[ -d "$company_dir" ]]; then
   echo -e "\n📁 There is already a directory for the company \033[1m$company_name\033[0m \n"
   if [[ -d "$target_dir" ]]; then
-    echo -e "Job directory for \033[1m$job_title\033[0m also already exists under company \033[1m$company_name\033[0m. Please choose a different job title \n"
+    echo -e "📁 Job directory for \033[1m$job_title\033[0m also already exists under company \033[1m$company_name\033[0m. Please choose a different job title \n"
     exit 1
   else
-    echo -e "Only the job directory will be created. Please continue \n"
+    echo -e "📁 Only the job directory will be created. Please continue \n"
     company_exists=true
   fi
 fi
@@ -32,6 +32,7 @@ fi
 
 # make directories and create files
 mkdir -p "$target_dir/resume" && \
+cp -r ~/Desktop/miscellaneous/Employment/_assets/images "$target_dir/resume/" && \
 cp -r ~/Desktop/miscellaneous/Employment/_helpers/Makefile "$target_dir/resume/" && \
 touch "$target_dir/job_description.txt" "$target_dir/resume/main.tex" "$target_dir/resume/resume_config.cls"
 
