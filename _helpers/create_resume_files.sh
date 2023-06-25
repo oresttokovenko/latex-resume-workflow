@@ -32,8 +32,7 @@ fi
 
 # make directories and create files
 mkdir -p "$target_dir/resume" && \
-cp -r ~/Desktop/miscellaneous/Employment/_assets/images "$target_dir/resume/" && \
-cp -r ~/Desktop/miscellaneous/Employment/_helpers/Makefile "$target_dir/resume/" && \
+cp -r ${PWD}/_helpers/Makefile "$target_dir/resume/" && \
 touch "$target_dir/job_description.txt" "$target_dir/resume/main.tex" "$target_dir/resume/resume_config.cls"
 
 # check if everything went fine
