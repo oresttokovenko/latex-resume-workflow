@@ -32,6 +32,5 @@ Once you have cloned this project, you need to update the following:
 
 - `resume_file_name` variable in  `_helpers/create_final_resume_pdf.sh`
 - `linkedin_link_url` and `website_name` variables in `_helpers/print_links.py`
-- `dir` variable in `_helpers/Makefile`
 
 Alternatively, you can search for all variables connected to a `# NOTE: update this` comment to find variables that need updating.
