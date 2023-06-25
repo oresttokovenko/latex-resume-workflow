@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# exist script if error
+# exit script if error
 set -e
 company_exists=false
 
