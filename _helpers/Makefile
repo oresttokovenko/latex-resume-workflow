@@ -5,7 +5,7 @@
 
 # NOTE: update this
 
-dir = ~/Desktop/miscellaneous/Employment/
+dir = ~/your_directory/
 
 ####################################################################################################################
 # Help
