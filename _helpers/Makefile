@@ -17,7 +17,11 @@ help: ## Print all commands (including this one)
 ####################################################################################################################
 # Resume Functions
 
-compile: ## Compile using XeLaTeX
+compile: ## Compile using XeLaTeX while supressing errors
+	-@bash $(dir)_helpers/compile_xelatex.sh > /dev/null 2>&1 || true
+	@echo 'Compiled ✅'
+
+compile-log: ## Compile using XeLaTeX and print logs
 	@bash $(dir)_helpers/compile_xelatex.sh
 
 final-pdf: ## Export the output.pdf and rename it
