@@ -20,7 +20,7 @@ To use this workflow, you need the following installed on your machine:
   - Note: This workflow is designed with VS Code in mind. However, you can make this requirement redundant by replacing instances of the word `code` in the `create_resume_files.sh` script with the command to open your preferred text editor
 - A LaTeX distribution that contains the XeLaTeX compiler
 - Python version 3.7 or higher
-- A method for viewing pdfs in your IDE. I use the following VS code [extension](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) which has hot reloading. 
+- A PDF viewer integrated into your test editor. This is necessary to view the compiled LaTeX files efficiently. If you're using VS Code, an [extension like PDF Viewer](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) can be used. It supports hot reloading, which allows the PDF to refresh automatically when changes are made to the source file.
 
 ### Installing LaTeX
 
