@@ -3,7 +3,7 @@
 ####################################################################################################################
 # Directory
 
-# NOTE: update this
+# NOTE: update this. Ensure there is no trailing slash in the dir variable
 
 dir = ~/your_directory
 
@@ -11,7 +11,7 @@ dir = ~/your_directory
 # Help
 
 help: ## Print all commands (including this one)
-	@python3 $(dir)_helpers/ascii_graphic.py
+	@python3 $(dir)/_helpers/ascii_graphic.py
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 	
 ####################################################################################################################
