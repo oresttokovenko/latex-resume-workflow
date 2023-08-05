@@ -17,7 +17,8 @@ This workflow includes several key features, which are implemented through make 
 To use this workflow, you need the following installed on your machine:
 
 - VS Code
-- A LaTeX distribution
+  - Note: This workflow is designed with VS Code in mind. However, you can make this requirement redundant by replacing instances of the word `code` in the `create_resume_files.sh` script with the command to open your preferred text editor
+- A LaTeX distribution that contains the XeLaTeX compiler
 - Python version 3.7 or higher
 - A method for viewing pdfs in your IDE. I use the following VS code [extension](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) which has hot reloading. 
 
@@ -42,7 +43,7 @@ You can also search for all variables associated with a `# NOTE: update this` co
 ## Example Workflow
 
 1. In the root directory, run `make new-resume`. If successful, a new directory will be created in the file explorer and three files should open automatically
-2. Paste the command that was copied to your clipboard into the terminal and run it. This command will navigate you to the correct folder in your new directory
+2. Paste the command that was copied to your clipboard into the terminal and run it. This command will navigate you to the correct folder in your new directory and allow you to take advantage of the LaTeX compilation related make recipes.
 3. Open the `job_description.txt` file and paste the job description for the position you're applying for. This will help you tailor your resume to the specific role and keep track of the job requirements
 4. If you haven't set up default resume TeX files to be copied into each new folder, then copy and paste your TeX code into the `main.tex` file. If you're using one of the provided templates (such as the one in the sample directory), you will also need to paste code into the `resume_config.cls` file
 5. Run `make compile` to compile your resume. You can view the output by opening the `main.pdf` file
