@@ -1,4 +1,4 @@
-.PHONY: help compile final-pdf links
+.PHONY: help compile compile-log final-pdf links
 
 ####################################################################################################################
 # Directory
