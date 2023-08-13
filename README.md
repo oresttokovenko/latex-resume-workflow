@@ -30,6 +30,14 @@ You can install LaTeX using Homebrew with the following command:
 brew install --cask mactex-no-gui
 ```
 
+### Installing sample resume font
+
+If you intend on running the LaTeX code in the `sample_company` directory , you'll need to install Gyre TeX fonts:
+
+```bash
+curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output ~/Downloads/tex-gyre.zip
+```
+
 ## Getting Started
 
 Once you have cloned this project, you need to update the following:
